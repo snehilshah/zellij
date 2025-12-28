@@ -5,7 +5,7 @@ layout {
             plugin location="https://github.com/dj95/zjstatus/releases/latest/download/zjstatus.wasm" {
                 format_left   "#[bg=#89B4FA,fg=#181825,bold,italic] {session}"
                 format_center "{tabs}"
-                format_right "{command_uptime}#[fg=#424554,bg=#181825]{command_uptime}{datetime}"
+                format_right "{command_kubens}#[fg=#424554,bg=#181825]{command_uptime}{datetime}"
                 format_space  ""
 
                 border_enabled  "true"
