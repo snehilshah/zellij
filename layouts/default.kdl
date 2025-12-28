@@ -37,13 +37,13 @@ layout {
                 tab_sync_indicator       "  "
                 tab_floating_indicator   "󰉈 "
 
-                command_kubectx_command  "bash -c 'if ctx=$(kubectx -c 2>/dev/null); then echo \"$ctx ::\"; else uptime -p; fi'"
+                command_kubectx_command  "bash -c 'if ctx=$(kubens -c 2>/dev/null); then echo \"$ctx ::\""
                 command_kubectx_format   "#[fg=#6C7086,bg=#181825,italic] {stdout}"
                 command_kubectx_interval "10"
                 
-                command_kubens_command   "bash -c 'kubens -c 2>/dev/null || echo'"
+                command_kubens_command   "uptime -p"
                 command_kubens_format    "#[fg=#6C7086,bg=#181825]{stdout} "
-                command_kubens_interval  "10"
+                command_kubens_interval  "30"
                 // Command to get pane info (running command in focused pane)
 
                 datetime          "#[fg=#9399B2,bg=#181825] {format} "
