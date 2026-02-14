@@ -3,43 +3,39 @@ layout {
         children
         pane size=1 borderless=true {
             plugin location="https://github.com/dj95/zjstatus/releases/latest/download/zjstatus.wasm" {
-                format_left   "#[bg=#89B4FA,fg=#181825,bold,italic] {session}"
+                format_left   "{mode}"
                 format_center "{tabs}"
-                format_right "#[fg=#424554,bg=#181825]{command_uptime}"
+                format_right "#[bg=#d4be98,fg=#1d2021,bold,italic] {session}"
                 format_space  "|"
 
                 border_enabled  "true"
                 border_char     "─"
-                border_format   "#[fg=#6C7086]{char}"
+                border_format   "#[fg=#504945]{char}"
                 border_position "top"
 
                 hide_frame_for_single_pane "false"
 
-                mode_normal        "#[bg=#89B4FA,fg=#181825,bold,italic]  NORMAL "
-                mode_locked        "#[bg=#6C7086,fg=#181825,bold,italic]  LOCKED "
-                mode_pane          "#[bg=#FAB387,fg=#181825,bold,italic]  PANE "
-                mode_tab           "#[bg=#A6E3A1,fg=#181825,bold,italic]  TAB "
-                mode_resize        "#[bg=#F38BA8,fg=#181825,bold,italic]  RESIZE "
-                mode_scroll        "#[bg=#CBA6F7,fg=#181825,bold,italic]  SCROLL "
-                mode_session       "#[bg=#F9E2AF,fg=#181825,bold,italic]  SESSION "
-                mode_move          "#[bg=#94E2D5,fg=#181825,bold,italic]  MOVE "
-                mode_search        "#[bg=#F5C2E7,fg=#181825,bold,italic]  SEARCH "
-                mode_tmux          "#[bg=#FFC387,fg=#181825,bold,italic]  TMUX "
-                mode_enter_search  "#[bg=#F5C2E7,fg=#181825,bold,italic]  SEARCH "
-                mode_rename_tab    "#[bg=#A6E3A1,fg=#181825,bold,italic]  RENAME "
-                mode_rename_pane   "#[bg=#FAB387,fg=#181825,bold,italic]  RENAME "
+                mode_normal        "#[bg=#fbf1c7,fg=#1d2021,bold,italic]  NORMAL "
+                mode_locked        "#[bg=#ea6962,fg=#1d2021,bold,italic]  LOCKED "
+                mode_pane          "#[bg=#e78a4e,fg=#1d2021,bold,italic]  PANE "
+                mode_tab           "#[bg=#a9b665,fg=#1d2021,bold,italic]  TAB "
+                mode_resize        "#[bg=#ea6962,fg=#1d2021,bold,italic]  RESIZE "
+                mode_scroll        "#[bg=#d3869b,fg=#1d2021,bold,italic]  SCROLL "
+                mode_session       "#[bg=#d8a657,fg=#1d2021,bold,italic]  SESSION "
+                mode_move          "#[bg=#89b482,fg=#1d2021,bold,italic]  MOVE "
+                mode_search        "#[bg=#d3869b,fg=#1d2021,bold,italic]  SEARCH "
+                mode_tmux          "#[bg=#e78a4e,fg=#1d2021,bold,italic]  TMUX "
+                mode_enter_search  "#[bg=#d3869b,fg=#1d2021,bold,italic]  SEARCH "
+                mode_rename_tab    "#[bg=#a9b665,fg=#1d2021,bold,italic]  RENAME "
+                mode_rename_pane   "#[bg=#e78a4e,fg=#1d2021,bold,italic]  RENAME "
 
-                tab_normal              "#[fg=#6C7086] {name} "
-                tab_active              "#[fg=#89B4FA,bold,italic] {name} "
-                tab_separator           "#[fg=#6C7086]│"
+                tab_normal              "#[fg=#928374] {name} "
+                tab_active              "#[fg=#d8a657,bold,italic] {name} "
+                tab_separator           "#[fg=#504945]│"
 
                 tab_fullscreen_indicator "□ "
-                tab_sync_indicator       "  "
+                tab_sync_indicator       "  "
                 tab_floating_indicator   "󰉈 "
-                
-                command_uptime_command   "uptime -p"
-                command_uptime_format    "#[bg=#89B4FA,fg=#181825,bold,italic]{stdout}"
-                command_uptime_interval  "30"
             }
         }
     }
