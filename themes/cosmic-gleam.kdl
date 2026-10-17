@@ -1,0 +1,131 @@
+// cosmic-gleam, ported from ~/.config/nvim/colors/cosmic-gleam-new.lua
+//   bg #282828  bg_dim #1d2021  bg_0 #32302f  bg_1 #3c3836  bg_2 #504945
+//   fg #ebdbb2  fg_dim #bdae93  grey1 #928374  grey2 #a89984  selection #45403d
+//   red #ea6962  orange #e78a4e  yellow #d8a657  green #a9b665
+//   aqua #89b482  blue #7daea3  purple #d3869b
+themes {
+    cosmic-gleam {
+        // gleambar: background = bar colour; emphases = mode badges, matching
+        // the nvim statusline modes (0 tmux/pending, 1 scroll/visual,
+        // 2 rename/insert, 3 other)
+        text_unselected {
+            base "#ebdbb2"
+            background "#1d2021"
+            emphasis_0 "#e78a4e"
+            emphasis_1 "#d8a657"
+            emphasis_2 "#7daea3"
+            emphasis_3 "#ea6962"
+        }
+        text_selected {
+            base "#ebdbb2"
+            background "#45403d"
+            emphasis_0 "#e78a4e"
+            emphasis_1 "#d8a657"
+            emphasis_2 "#7daea3"
+            emphasis_3 "#ea6962"
+        }
+        // active tab (emphasis_0 = tab number)
+        ribbon_selected {
+            base "#ebdbb2"
+            background "#3c3836"
+            emphasis_0 "#d8a657"
+            emphasis_1 "#e78a4e"
+            emphasis_2 "#89b482"
+            emphasis_3 "#d3869b"
+        }
+        // inactive tabs (emphasis_0 = tab with a bell)
+        ribbon_unselected {
+            base "#928374"
+            background "#1d2021"
+            emphasis_0 "#e78a4e"
+            emphasis_1 "#bdae93"
+            emphasis_2 "#89b482"
+            emphasis_3 "#d3869b"
+        }
+        table_title {
+            base "#a9b665"
+            background "#1d2021"
+            emphasis_0 "#e78a4e"
+            emphasis_1 "#89b482"
+            emphasis_2 "#a9b665"
+            emphasis_3 "#d3869b"
+        }
+        table_cell_selected {
+            base "#ebdbb2"
+            background "#45403d"
+            emphasis_0 "#e78a4e"
+            emphasis_1 "#89b482"
+            emphasis_2 "#a9b665"
+            emphasis_3 "#d3869b"
+        }
+        table_cell_unselected {
+            base "#ebdbb2"
+            background "#1d2021"
+            emphasis_0 "#e78a4e"
+            emphasis_1 "#89b482"
+            emphasis_2 "#a9b665"
+            emphasis_3 "#d3869b"
+        }
+        list_selected {
+            base "#ebdbb2"
+            background "#45403d"
+            emphasis_0 "#e78a4e"
+            emphasis_1 "#89b482"
+            emphasis_2 "#a9b665"
+            emphasis_3 "#d3869b"
+        }
+        list_unselected {
+            base "#ebdbb2"
+            background "#1d2021"
+            emphasis_0 "#e78a4e"
+            emphasis_1 "#89b482"
+            emphasis_2 "#a9b665"
+            emphasis_3 "#d3869b"
+        }
+        // floating pane borders
+        frame_selected {
+            base "#d8a657"
+            background "#1d2021"
+            emphasis_0 "#e78a4e"
+            emphasis_1 "#89b482"
+            emphasis_2 "#a9b665"
+            emphasis_3 "#1d2021"
+        }
+        frame_highlight {
+            base "#e78a4e"
+            background "#1d2021"
+            emphasis_0 "#d3869b"
+            emphasis_1 "#e78a4e"
+            emphasis_2 "#e78a4e"
+            emphasis_3 "#e78a4e"
+        }
+        exit_code_success {
+            base "#a9b665"
+            background "#1d2021"
+            emphasis_0 "#89b482"
+            emphasis_1 "#3c3836"
+            emphasis_2 "#d3869b"
+            emphasis_3 "#7daea3"
+        }
+        exit_code_error {
+            base "#ea6962"
+            background "#1d2021"
+            emphasis_0 "#d8a657"
+            emphasis_1 "#1d2021"
+            emphasis_2 "#1d2021"
+            emphasis_3 "#1d2021"
+        }
+        multiplayer_user_colors {
+            player_1 "#d3869b"
+            player_2 "#7daea3"
+            player_3 "#d8a657"
+            player_4 "#a9b665"
+            player_5 "#89b482"
+            player_6 "#e78a4e"
+            player_7 "#ea6962"
+            player_8 "#bdae93"
+            player_9 "#a89984"
+            player_10 "#928374"
+        }
+    }
+}
