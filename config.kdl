@@ -99,10 +99,11 @@ keybinds clear-defaults=true {
     }
 }
 
-// Swap the built-in compact bar for gleambar (~/myCodes/zellij-gleambar).
+// Swap the built-in compact bar for gleambar (github.com/snehilshah/zellij-gleambar).
 // The built-in "compact" layout loads whatever "compact-bar" points to.
+// Dev build instead: location="file:~/.local/share/zellij/plugins/gleambar.wasm"
 plugins {
-    compact-bar location="file:/home/snehilshah/.local/share/zellij/plugins/gleambar.wasm"
+    compact-bar location="https://github.com/snehilshah/zellij-gleambar/releases/download/v0.1.0/gleambar.wasm"
 }
 
 theme "cosmic-gleam"
